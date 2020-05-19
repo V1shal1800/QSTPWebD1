@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class = "navbar navbar-expand-md navbar-dark bg-dark">
+            <a class = "navbar-brand h1" href = "#"><img class = "circular--square" src="COLOR_POP.jpg"> Vishal Sharma</a>
+
+            <button class = "navbar-toggler" data-toggle="collapse" data-target="#navtarget">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navtarget">
+                <ul class = "navbar-nav ml-auto" id="navlist">
+                    <li class = "nav-item">
+                        <a href = "#AboutMe" class = "nav-link">About Me</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Qualifications" class = "nav-link">Qualifications</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Skills" class = "nav-link">Skills</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Projects" class = "nav-link">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>  
+    
+    <div class = "container">
+            <div class = "col-xs-12">
+                <h1 class= "text-center">Welcome</h1>
+                <p class = "PText PT1">Hello 👋🏻 my name is Vishal Sharma, and I’m a Creative Developer. I'm currently living in Bhubaneswar.</p>
+            </div>
+
+            <hr style="border-color: black;"></hr>
+
+            <div class = "col-xs-12">
+                <h1 class= "text-center" id = "AboutMe">About Me</h1>
+                <p class = "PText PT1">I am currently an undergraduate student and I love to code and explore new things.</p>
+                <p class = "PText">My hobbies include quizzing, watching sci-fi movies, guitar playing, trekking and playing football.</p>
+                <p class = "PText">I’m constantly enhancing my knowledge and I aim to learn more day after day and stay on the forefront of the new web technologies. I’m focused on creating exceptional user experiences through creative design technologies. I always aim to the highest levels of creativity and execution in order to grow and develop online experiences that leave a lasting impression.</p>
+            </div>
+
+            <hr style="border-color: black;"></hr>
+
+            <div class="col-xs-12">
+                <h1 class = "text-center" id = "Qualifications">Qualifications</h1>
+                <div class="carousel slide" id = "QualSlide" data-ride="carousel">
+                    <ol class = "carousel-indicators">
+                        <li data-target = "#QualSlide" data-slide-to = "0" class = "active"></li>
+                        <li data-target = "#QualSlide" data-slide-to = "1"></li>
+                    </ol>
+                    
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class = "img-fluid" id="Logo" src = "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/BITS_Pilani-Logo.svg/1200px-BITS_Pilani-Logo.svg.png">
+                                    <div class="card-body">
+                                        <p class = "Ptext">
+                                            I'm currently studying as an undergraduate student at BITS Pilani Goa Campus with B.E. Computer Science as my branch of study.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <img class = "img-fluid" id="Logo" src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMVFhUXGBgYGBgYGBggGBsaHh0bFxgdGB8YHiggHRslHhoaIjEiJSkrLi4uICAzODMtOCgtLisBCgoKDg0OGhAQGi0fICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS03LS0tLTctLS0tLS0tLf/AABEIANwA5QMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAABQQGAgMHAf/EAD0QAAEDAgQEBAMGBQMEAwAAAAECESEAAwQSMUEFIlFhBhNxgTKRoUJSscHR4QcUI2LwcoLxFTNDojVTkv/EABkBAAMBAQEAAAAAAAAAAAAAAAACAwEEBf/EACERAAICAgMBAAMBAAAAAAAAAAABAhEDIRIxQVETMnEi/9oADAMBAAIRAxEAPwDt1FFFBoUUUUAFFFFABRRRQAUUUUAFFFBoADWnE4hKElSiwGtF+8EpKlFgBNUPjPHVX1hFsQ7JTuTsT3pJzUUUhByZa+GcZTdWUaH7I3YdabA1zVrtgpUQdmOgBP2S2ryfY1eOC8VTfQ4+IfEOhpMeS9MbJj47QzooBoqxEKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiisSqgD0mo2PxqLSCtZYfUnoO9LON+IrVgEOFL+6NB/qO3prVHvYy/i1kiW1P2UvoI0/PepTyJdFYY2+yfxrjC8QvKjNlcZU99S7Q8/hU3hXCPLAKgSo6l9CxLB56/wCNUzg3CkWkOGKy2ZW4aIjtoKaouEsMvtAYy/4QfWpVe2V5VpEPiGDTcQQdQ4OmvxP2aTVVwWJuYS9DkAHqykzq0d6vOIWAFPMjaSCGn3pNxfhSLiPh0chSdRDaPMde9E41tBCXjLDw3iCLyMyCD1HT1qaDXK7OLuYO82bQ+yuoM9avvBOOW8QmIVuk9e3WqwyJ9kp43HaG9FYg1lVSQUUUUAFFFFABRRRQAUUUUAFFFFABRRXj0Ae0V49D0Ae0Vi9aMTjEIDrUE+prDaJL14TVe4h4tsW3AJUewLdNWqsY7xfeuulDIeOWTu/+fI0jyxQ8cUmXjiXF7VkOtXoBJf0qk8a8ZXFkptcie3xH/Oz0ss8GvXFK80hI1+JCiWEkMS4bf92dcNwlu22UAQHJLltNSdydh0qMsrei8cUVsW8P4Iu6QbgIP3HYkHrMO/7irRgcPbTyAQlvSQQT023nXrWr+bgKnKGIBJAbQmIAET6wK03eIpASokgKLOAC2ZgCponT5GlVI12x84ysRpOvTfYDR6xsXwQ7ATDH29G2+VVTG8WWm8bSEpGYKIUo5QAIAnvqXknasMNxxasNcWWC0kpCw7KL7DSAfzem5i/jLWFFi5nVvbXqHqHdxDA6szhyGcQfbcD1rLCX81oKJd05jKmkCNHG3Wqsrji/KQrKHWpSUnqQTlzB9NiNuk1kpaNjEc4q4lbpWxTMM5mQY3YezaVXr+EVYUVW1ZgCeoyhyxPZvlNb8Ljb2cJupQSXOdLx0CgdxtHzmmN/GpKXKsoAIOfRtHdOojp061K7K1RI4B4xCjlun0Vp1LF40j2q4YfEpWAUkEHoa5diuGoXzoWEHmfIxedwCG+kbVpwmJxGGOZLlI1I+EgwHHct+tVhmrTJTwp7R10GvXqj8N8cAsLqW7jfaKs+D4vaufCsF+/YH8xXRGcX0QljkhjRWAXWQVTkz2ivHoegD2ivHoegD2iiigBdxjiJspCsuYEsZ036VXr3jUAsLYP+4fpVm4phvMtLQwJIh9H1H1rlOHQg4hKLogkgg7Focgjd99xUcspLovijFrZZz43U/wACdtz+0s9RMX42vEkICQNmD9u9POE4Cw3/AGkuH1HsW9fyr3G4a3bUcqQIhkiCe/6k1NuVXY9RuqKt/wBWxl1QT/VMO3Mlh1OVorUOE4hbknQgEnMSx3D/AD1FWdd0ZoDlmHyaY7mttlKgFM7Fzo8DuGL8pHpFTtt7ZTS6RXbPh9MZ1qkkNoDvDS3aWpvawiLXKEJJzbR3G+uk96nXrQV2BckhMATB6/hS5aWJATnkSCSX1DvPpBEGKGqBOzdbuICSHBjMoHLlPv3jU/so43jVWkqW2aBAgS42Bdi3SDr1yVi2vlBP2AsE75TIU7ZSOz6VvxlsNkVmOZLEj5MAJIbr69wrdjJCTB8RuLuhC1W7iFpJV5ci0DmiGc9ncA+1a8PdR/LXLC1ALTmA5S8ElIS3xOW6NGu0/guG8tASEtzKVqCTMahoAG0uYlg3Si1zKPO2j5UkEgRy+kGNN6FsJFfx2CuXBhl+X5ighIVbWlgYYZnYNHwt71uwfBLoN5RRaSLiGCAHSl4dLs07v30FWC3etqTnSsKiCSHmMpbepqcnNlBMGG1GhbYaH69abiK5CPBW8SEhKsmUDXmDtuAzFwGbTlel54UrInKjNct3DcAJcEO4zdmb6TVjAzEkcsZf9w12MEt8q3JypDN8QDM53lyS51bfSjjYcqKxhU3iVFdvKkAAjUuARmW8AsfhLAxBqJxhriU2pC1jMAA6QXhmD5SSYHuKsOPvoBCQA6wQesAkjSSHMdd6V8UtIWk5kpIkAEczljsPRiD3qUqRROxXwPFJQi5dVltvBASPLdIZh9nMSXYFt9pYnHhLKuWlAKUUAlQ+KCAtLOku5HYVHxWBV5ITbTlyNcEAAlypIMGSDp2nqMbeKStxdtm2kMQVhL9COYxqB1bRtKLCibewFpQIH9IkpBCWSC05lDR+b96Xq4TdQAq2vMAe6VR/qLEP0VWPCuIi4pa1kIQkfAHHLr5h2fUPtAnd7w7GIUgqcZVBgTBIdhDOenzNMmYxTa41i7IlVxhuQSNBAJ2nQGmNrx5cAZSATuX9e0ftTFQL5cojK2uh/X8qw4jwKzPICSPuh9A2h1JPr3NUU5VoRqLe0bLXj22ZKSAPf6u3SplvxtZOoI66u41BjUVWLvALZISpJSTAOYvodpJ2rXY8NWy3Mpty4106aULNIV4YFtHjbD93dtD9C1ZHxlYdmVo+n7VVcf4TQi2pfnEESxA2d9W6g0o4DglXbiUI1UWJ6Aan5TM1RZJNi/jhVnV+F8SF5JUEkAFu3tXlSMHhU20JQkcqQAKKukznbXwkKFcu8cYQ2cTnTGYhaW6vP1rqRqn/AMRcFmtIufdJB9D+4FLkVobE6Zt4TiyrKVfaAL7GAfU/lNNsWnkc6Cfb/AKqPhS6k2CgF1CPQBzDnWRp+VW7DqzAatp+EHsGqUXqi01uxXhrZd2JLOfu5W2ca155hCcsJCWAI3UdRo9bhZU5zNJO5jprsXGnSo2NTqC+eVMfcM4gQOrdqntI3tm5XxAOUpAPKPQ9p3/ek3ELIuAWylUlm+0FAsCNOwEnvUHxB5nlhdslOQHfVLHM0MROmgao/DsdibgSr+nbQSWIBJBZiQ5ae/sRujlZRRo3XeF4oLt/1BdQgkB9dGU7B9BEn0pmcEoFWUE5lEN0LBxIgQSwLVtwTAJ/qKcBgSXWo9C4gPqO21Mzc5SlSg8kCXaQHExu766tpTKKZjk0V+6tebkCTuHJ1GgBSAwD6EPpUIYu67Ls3Eg6ZSC7S6pdvSJemPEsItwpK8lqCAAknTM6nOjNBbSZ1U33tMV3yXflShBcsZSwUygzuRqx0FTr6OYqxltKg2dC1RCB5ZluYOQWEuO0603wWOIsuooygMVJKgmSwkswHTbM3aq2vA4i4WteeQUk8922n1JDBgAO20hpY4xC8Ph0+a9wg5VBlbkl1EnRgBox5er1qMdGXBschN7OnF8pHwmI5X1ZmidddXYvsXjmtLLwCdgSQ8M7B93IbSqNZ46kqJOGR5mgl+zNlJzByXJlmar0VZkMByqQ5CvmQ8l2YRtTIxpdlR/nFXwvP5mR1NaD5SCMzlROvT50yskC2/kLAYMFKSEpJEgAS0BmHsK0YrD27WZ1XrLnOk51FOYQSCh+buT2fplh7V5zluJuBQdiILwDmSR0PNO7A6Ug/wDBhcc2squUp2iCXcEvIL6iW7Vhj8Im6gAh0gzHR1AEgyNdH+ZrZZRdISFpTm5gVJYBwohIIZ1eugapKk5UBIzP0DBJYRDzp101oMK7xaxnWkFINm3zFcZiwJCUlwMvr1rHh3ErqkZ0JTlChlcnMoBhlSBALpMwOzU/4hhxctnRlAlQE7Dbs1ILGEvoRkGV3ZCwVZgJcsAxUAYl3I9iqNtFjwmPF1AUAogB3IDjsdv+DoaZ8QuqygPBh9vqYInbcVUcBxizbHlICliSteRWwBKj1l3I7trVluYtK2DFgH0VA9AP7hG8etOnonJbTNN62AdSoDlly46PqCDDTp3rC+Eo5XLbdBq/btrWfmlKVMGjmAcEdQGDNIoxCgBlgN7Aklt9NvQ7mkGK94kxpIFpzzMohy4GzxuMsHoatngLg4t2heUOZYjsnUN661SsNbOLxQSPhKsgIf4QS5Lzo5rr1i2EpCRAAAFdWGPrIZpVpGdFZV5XQcx6aWeIMN5mHuJGuUkeokUzrXdS4IrH0auzmPgxTXFiI5mPSQqfSrvhVA8w0eSZ3Lh+v4CufcMum1jGdxmUk6sWf9KvNtUOAQDKWbq7mSHk1yxdM6pqyVilSC6gG9i0+r1WcdxhNtQCiSogEAcxOzAiUhg2/vVnv2ypBy66iSxjb2/CqPicPet3VXAgLgcspUAOnU676t0oyOgxJMYWcQm6jlIWQQMubIQXDgwCnUmA3rpWrAYU20pSFfCRqNBsxDQ7tPfeo/Dsly6u6m2EoCQkhTBeYOovr/pLHbTamFxRYEPAT8TNJLN3YHv1qTKoncPu9WMEhkHV2Jcaa6Ab6k1rvIKiQACNvrJaSG7gTuTWGDsEQCA5SNAe8l9n1/wzbdklPw5CWKg5MMwaYHy3O1MraEdJifEcOTdUfMEdDcJYksGGmYliYowmBRbHKhhBIT95nIVvo3tB1pgpBVlSthJiXMS/Yuda8xOHWV8hYBRmNBHXXo8iR3rGtWamY4S+ErSCGbl1dyA6iVFtjDk6monGsWPKUu2OYfCoOHAksBBBYwDsOjVisk5gvN5hLZQGPZyTqA+m5fWaUeJMR5eHUAs5mYslLuTMfZSxL5TrsztnLwOPpBwfiZClDLZAuLWxJPKASCwYbn9d6umFQC3xS8a5dAAcxbpHppXG8JdJuJdQEgAqlLCA8SIZq7BhUFSXQvUpLkvo0N1c6tJ9K30JdEjHWQoELLpBJPKGLQc0NJ29qVHCMqCEMAQ0P9oODBSSf+NmlscxCmd/hBLamU/i2hrbh7CFA5eaXcH5jUA0NcgToX4Gzd0XlESy3BJ3b0aHqRawpBBPsQwDw/UJDDu+lS8MhLqhwTEF+syzky41itwSWICXgEgaEgwze/rTKGheRCxV9HKHYP8ACNDLDboKTcQWpYVlJDAhMF0vAL7TOzdtKbX7hUkr2GslxuGAhpAczrSvEWmHPJJOUgJYMfX6k6NSTY8SvWcT5aMtu3cCwhiAIzBOVSsyYyknNm2nrDjhqFItJtFYUtM5c0xLsSDAITI/KlfELi0qQlKhbSospRAJHTXbd9XGoGrbBcJFpQXOaOclyxaOf7TCSOw6ui2O9DdThJIy6OX0MtOx0bWH70r41cTbtLJQoAjKmWdW46gtLwW7U4UWdZA1ALnXQO7fE8tp2qq+MLqibSSGDEiXgQHcAuA9UoRNjj+GeA5l3S7ABI6EmT8gBHeuhCkPgvDZMJb/ALnV8zH0p+K7YKkcc3cgooophArFVZViqgDkl9fl45lf/asT/c6dvUVdbPwsl26EzG3Z5NUjxQk/zyob+qPeQ30q320iUlywfQSTD/8APpXG+zt8Q6wvQuxMfv3qDicIABmlndnJLuGH4sPpQcclCnUMoLAe7s5H+fOssbiELYJVJBIAIckTB67NT2miaTTFpMJaGSXjb/CenvUi2EhAUS7BiBEEbBID16u2hwlRALZlhxLlw+kQdeorBHGcOWZaCSSySQTEwBO0DU0iiO2zNOEJMoISQREhzIMR8/SpCcGpigASznY9T+UVovcZwyF8xCcwd2MvERm2/wCHFbbHGbS0hSVMkAGVABu/sXpko/Rf9Hpw5A5tWOjADVm33rRiLClAFw+w69SXn4S0d/Si9x+2lDs4JAcSHOg6Eu0Vrv8AE+UsQX+0G21d+setZLiauRouYfMVCAVkAxOWQQzypy4M1VfGJQiypIUQpRCSI5i7vp8DBzInLpVjHFkBHmKU8HIrZgMyeUhyw2194qqeJrycQMuHSq4SQSoBgkgMQSQGkyDuRMEGToor9KRbVI0Hf9XrtHBLoNtK0CCE5R0gPLxoWBJ361ye7wi8m7kyuWcFJDEMC4MdQ4gj1iuieGeJoTaFtaiCIKVBRIISDLpZmBgONNJdk1YNWiwG15g0HVwwA3fYsa3W7ZEGZDkQHHpBP6UsXxi2lJUCQBIUNGBAdxqNssaMHevLHFwrKtNwEJbMlLxLSXdnf5DStTQlMepuBmTqxI/HQ+2/40suYwAwyQXAJ1BkgTLR9dq0XON2ZHmMXl1JYEyHBLaNWF7GoTz5xlI+JQYO0sTDGYrZSCMTaVkoWlMbF2YOzK69mqKcPmBDcpVPV5dTO3R+3pXlvHpUlkKBVIbM4llSHcQSJ6kaioq8SmCFApykFTuk6upSgJOonvAqTKIlowSLjkhKiwUVE6MQ2VtRp89akYy4klKQ7BDbvqzP90nX0HSl4x9kkLJCswGXVlOSyeYOZBBAEMBuKMfj7OcgLQB2UHTBfKCRo7ECRR4Z6SBcZhmdR/tDM87P7PpVW4rcCsSkElglILAZtyNTJ09NKfrQAl5doYp+HsRrGpG7d6r9lIVjsqgW8wJ1OzAa+3tWw7Gelo6/gbIRbQlOiUgD0FSawSKzr0Eec+wooooAKxNZViqgDkvG/wD5A5iAPPl9IIIf8O1Wm0E/DqJADaDUt8nDf81DFK83GqUA73FHdtSAS0xr+r1asPYmCFdgWJMagyfSuGX7Hcv1I3GUqFm6tH2B1jYEydf82pJiscCpGIQo5beVOVyzl1E9WGaX6N0q14ywFgoAAKkiWcaQWI1ZR16DSldrw+gWV20lRB9lOWeIDhh129saNUkhNicbnsXlpUtlrCSWckApSQks+VidfSHIOeOQlNhRQAMoSUkKBysQ24l5Ov0NMhwRrQtqZSWIB0Il3YakKkb8s1oRwa5cyBa86EsCAILaeZJdolvvdKUa0RL94pv2yE3LivJGnxpJl++oHUtBrXgFZvOxASACDkQ7lw4JWAQwIBB/1ERT84TIUsllfDGbR8wGrM/2mD7tURfDyfMBUQ4YJJcJ0R1AcsCwZ2bTUBOxDwnEPkN22oISkBAblWqQToxWynDdOpBp9iF5k3PiBAUqFEM4LHTRwOmmugrRieD/ANFCM/wEMoJcpZpBJMGNC0+1bLiZzJTlGiQWAkgbGRpAZnFY2ahObCl2sOq2ElSAFBCgMqidh1Yodjrm+ezAcTCyQq2pKtVO5OUkSnKIA5ZAGg6OZFnhy0ptBK8ty2yQ0p+6rM5gKYdNCw3qJdups3F3L91OdTBOWChOaWSZBZ/iHUy5JPNAGOUhJsXlEpDqBzAxmBmN+VOonvIC7CK8oKWu46bqLissgZnDMCDJ5R2HYTI4liMNfRkF4JZX3SN9QICgzjaT82WG4cjGhKAtKUoUWZMKBAKgyWGYBh1jvWpeBdGFnDspFhlG2lAWRllZBA5gRLKV8E7ua2YxkXbK0sFA5V5SYzA5D/pS2s9Z0pve4KoNlUlCkaGSNnBHdJByjeawwPBCVC5eUlWVJCUgFI3LuSdWPvs1HEzkisJxiB5irllR/qKGYISElRbKkk6QFEhql3OH3bmEtokqSxEuCGUpuzdoqy4Xglry7tpTkupTu75i7gM4LMN9zvUPEcCuqti35rrSrlUkMUg8rKy66erVvFozkhfw69bNyUG1cyQE6FMKzJKAAWDN7gERS/hvEFJsqAsZy9w5yoB9ySDJMEEg6NPVxguGXTf8y8tLpGRIDsxcNzB2Llidw2wFSOH+HMtohRfmPLuAX0OpgiNHcVlM20VzCqYYEkkStLsHAzFmOrazsZnStqlJVdvhSVXVqJTnyAsEpAiQHABktAdiS1MjwEgWA5e27FTZVEkkZRLemzPsKkYXA+WV84UVqzsEwzy6tYPtp1obBG3hyChFu0slJSkNqUvJ3P4MNB1pBwxv54THmu8gTI10gtT7LlTBIYgEidw5fRh1ftSBvLxgMpSVoVuO+49/1rYPZkujs4rKsEGs69A89hRRRQAVoxd0IQpSiwAJJ6RW80j8X4ry8LcLPmGT56/R6xukalbOdcEzKxWZJLDMTDw8ev7DrV4tICDsCz+gDPpq7jXRutU3wtZUsrPNJAHqOZUyRqNPyq33LoAGpckTKoh/SBNcV7s7ZfDddSIUXCiHjX4oj9TtWq1dBPKNNASdS769tv8ABpViCOcojQyZAmX9G137VjbupSAkmCNIYMykhj3reWxa0SigtmYsRLnoXZIiCB1j5VHsXAjdgoiToZ1eZYksInvUdOPCitNskpdWZQAY7Bsw5/aB1O2FvFKEAgmS7NzD19dTsNqxy2Moujfi84gEBiSzAJdiXLgSxfvUfC4XMrKwPcTBYAwzDXpqKyTdW5ZTEiHYS+ofr7aaHWtmEUvMnKdAA3Vtxo8NvSPb2b0j29ZCQEMoc3qNUwxVuBESTUTzcqnSII0M9W21LjXqdWFMr2JzhmcGC+ypy6ByNRLb0sxWMUA5GjkR35gHd3eWDSPYlQRs9tHWArQt0JEhQ0LAghjq561S/EnD7t68ny0hSQhg2UJElSgGjVX+F6sQ45buFkqAUWWlJOmZlFtUuCQWfbekl/AYhBSU33IId3KU5mUCAHiegYkdYxMahInw7iWfy31h0vHKXHz+R6V0jwPgFW7OW4GK+ZiXcnQgNEJHXTWqeP58EvoQo5izSxKhDyO351YsJjU4dB/mL2a4ZKUJBjXMco3KjJI2O0vGW7FmtFmWpKVZdQpU6u79DDbx1jpWxdomJBSRt3/Pb1eDVQ4F4kXduKzAqTOUQ4c8oJh4YS0s0mrt5jiEwwI/tafYh+k1RUyb0a7doMWCTG+5B76aP/xMby0pklu/NHv9C9TyU6sSo7t7t0qGpBcA6aT6A7T9fahoxMXYnDlszkuXM7CA3Sfx61Lw94p+Mn3Z1ZZOzPHcuakKtgCA512AJjr6UuvOElSjABfV3f7UNmbo21JVOx7slXSkHOTDEQHb56E76etL71wAApAJD5jl10kNuCQwrThOKpUCDmSv4SlmEuyhmlThJP5OaztNLuB1Z+urSPXvpSSY8VRoJKTABeXIY5Slg3Rj/k1VeLAJxLh5CVB+uh1ZwSKvNy1ISPiPZ3TIGZ4316Gqj4ltc4Uxh0kkj1AiOvehaZvZ1vht3NaQrqlJ+k1LqveCcX5mFRLlPKfarCK9CLtHBJbCiiitFPCao38SccybdsHqoj6J/OrwTXK/F2O/mMT5YEBWVJHqXJh9H+hqWV1ErhjciVwW0bVkAlioFXNlKXOzBw8vqKbW1AJClyQVFwfiIkgf7i3ZqjWwE20iCUt0JGwcneB9azOVbJIIZzDsBADt9Np9647o66BRzFyWSYZ375pOrzL6j1rJNsZWY5TAJmJDsmTBLN3k7GGzKGXUfCGYe/eQdOxqbcUEgpQoK21fqAZJOgNal6Y34VrEXBbQq2tabdsPlQj/ALitQH1Or8yWeS4kCRwzHlVtKyFAEsBmBzBJCXJMqLQ+upqRiMEfKUQlIVlISVJ0zQwOonp9ar+Ht3EAW0k3FIDFSgSiyFuYBgk6+qQKz+jItKF5nCmYMQIEaDukfjH3q3ugNzaBm1EiG7SZ7dqUYbGcykE845SHToqQQX0b7Om+1MRaJbmcgsW0bbMWgiehYGKExWbxk2dJbZiCS2XR9iTpNKOL2c1q4ZMLGU9cpOpH1Yz01qaUqCSTIcy8O0eggQ43aoeNvi3auOCcqSSlWigxCZOgctEs42Fa2CXwqvArQNubVpbZpKlBejt8CmI1BI3pteshISDhjAlVsnNEASQoBi+57ddOBuqYH+WKRGZggIDAKSoBatQS7EgTrMTLOICS3lXEuGAYFILEucuZizF2Da6ClscUp4neViwllZSkcq2DBknNqZcAwXMjcilvDcYlF+8VqNvokOvmDuc3Zj826mtmKUpWOBAufZyhBKVtlKuUqnclz+dQcJYScUrOTZDkhlyDtzH0M6d6Yww4XjVIUQgvmYPvCnDjQ6CK7Pwy84HwhwG6xB/GGrmHCOHzeRatpuuohNxQBhi8qh2Lhg79K6RwGwpNlKSScvRQLMXYqAln1y1SHZPJ0NQqYfZo00Htv8jUTEncKA1D6gH9/wAqkO/fKZcf51HsKi4m4MoDkcoO2wLuRp+4qkuiMeyIvEskEDMosfoJ+Xzeq5xjH2VKuWVXFJALwSAVNALAgkONe1Z8X4ilACFhYz5gko0BBaWIJ3Ed9aQ8OwX8ybZSrMQWuvpkT8KpkxsPyNc9tnSopbJvCcK61KVkW/Mm4MuZyRDA8qmLgCdIenGYZgS6QAGLKAcTOVy0N1cE1lbwiUFKUhjGUBmcEGNGzFjvo7RItCiJUpLRIjRxBLwFEO+/SkaNN6LwYMvNDkKdj9SdnYPLUr8QMuwoIGjLbdg5IYBhDn26VMTZTlJLkuPZ/lBmQzu3atF4xl5dWITqn7Pws5nYjp1ejkwolfwyxo/qWiRLKAaTsfaBHeugiuL+HsabGKBlgsgwA4JI0AA7xXZbSnAIruxO1RyZlTNlFFFVIkDjWJ8uytQ1Zh6mB+Ncmt4jJiAtScwAVDn7pAk967Di8Ki4GWkKHQ0uueG8KQxsp+r/ADqc4ORXHNRWznF3xCnKwtrDMNUsRuTD6zW8eJrZYspJA3DvrBluknYmrxc8IYQ/+Mj0Ur9agYjwDhyDlVcSe5BHyYVF4GWWeIo/6taClAXEEFiGMu2XozO+jHSpVnEpCIGpbWFNrrqC/fQyGNaL/wDD1QINu4k/6hv9aSYvw9i7BzZFFmlMpIGj5dh0jrSPHJDKcWWjE3YISSxGuZI23mAGdhH5Q+IYc5TlhYSeYOwdyQ0OQxPT61XLPGr1tZzhwSSQBlU7ahgz+urCmOG4taIKUKOY/wBuUgrhk6vPs/Y0kk/R4m/htm3bZPlsp1AK+LnLajQLaQ+wPVq9w/FwoKWFhIKikO0sQAzsDBZuwJd3OaLqiNCCAZCTu0mCSIDj9YUIsGwgN5l1Y5bQL5Uk5nZMzLuWP0dU9GtFmVfSU5MvLBiA7PqwO0Nq1RP5VK0KzuQlixnoW1kCB0pP/MrthYCyspBBYElV8rJIDS7Sp/oaY4fEEpYjIoAOApwA4JG8aD2Efaob+hXwjXOGrJKUXVgkQFhKiwECeZmMTGtZ2cDjCUkXLSwCRlygM4ckgZYLafKKni7zDzCSFByQoBg2bKXkhjJk6elMsHigbSknRwoEAtLlu5BG3rWxSZkm6Kxd4BiVXPM85AXlAHKJBk6EknUzGmmgnYXwsgkLugLWpidgNBlA02PMQ8U0vXOeXOUHOkyGLOQw6+hY71MRiUKQR8Rc9A+jtPZ6dJNiuTo2cLwaEIyISlIA0aesx3qb5bawzPLe7BtWpaeMWrYClqOUuAdRESNi4Z/0pbxTxGLOUXAcq0llB/QgOY7HYF5qnJIlTY0xWOTbQVLUAATKjBnoNW/DeKrHiDjxC0hGdCSDzBKVkiYAJAY9c3QtvSa9xBdw+elZz2ls7PyF2UEtqATvLDqKYYW2V2wkeZ5fxJvFRGYmCEBWxQ2vXQa1OUrKqFEK7hU3VZrKilSFglK/MEFlZhBIf8jsATbeD2QkKulpZ1JEkdyGcudxShF6zZtqFxaSty4hSndLxMuH2Mf2zDxXiUqGVFuBmZRLkPoWDiIOvXrWRWxntUP7ygGcAypiTKtCHBaNXfX3qLdUUMpwlIAPQFJVGRR1h+h76VXFnFYhRy5iSxZCWaGHwiKl4XwPils6MvdahHs5P0rfxti80iVc4paL/wBQZmDzHoII0IPXXevFcUw3/kuZj2CiO8lMgjfXUVLsfw5uEc11APQAn8WqYn+HI3vH/wDO/wA6ZYWY8sSocXv2VKQqyXLEKggw2UnQEkRGjDqa6d4O4h5thIJlIYz+vZqRWf4esz3vkn8J1p74e8PHDLJ8zMCCNO7zVscWmSyTjJD8UV61eVY5z2iiigAoaiigDxq8KayooAW8R4NZvAi5bSSdwAFfMTVN414CID4dWb+1TA+xgfhXRK8IpHFMeM3Ho4scTiMMShadAAyxIADcpOn1H1ppw3G2VsAplEjlUwUWiAYJkQPu6a10fifCrV9OW6gK6Hcehrn/AIh8ErthS7XOjVg+cDv19ahPCdEc16ZsTwwEApQQkLzZQ3xKDOOrOdW+tbRhlhBWRIzMc0JjU5nLuR0DmaQ4XjZB/qg7MpLBti49Azindi6kMFSk8xY7FyHPQlpPT0rna2WTFyrSknDoFxyS6tjlBKswUHYSAxHuA9Qk4m6hBKQlIN0gXCdAVsQQHcOPUNVmXgyzCRKjGgPMGO/T2mt9rhqUiAh30dj6w79WY7nahJsOVCNN9af5jMrKzhI2ACXABeCH/DtUEpK1c+WbSVpNwlkyQcoB016lLu9WzE4a2pRXkS5fmJlTdtWBBYSB0ENgySWuBJLRDkawktoQ++tbRl6K7fSq7aw6EoJYgl0lmSkAhTa/Dr6Cs08KvZAlRJCCldpTMqZVbLn4T0n30q2lDWySWHVSi4AJJCn0Z+u1U/iPGCSoWnzPNwaakcjiBl1PWY1LOJnIxx3k2VqXAUUcoCXUSw1EMMzzHpUG/i7uICbaUZQAwCZJl9QNOwp9wPwZdv8A9S8opB3UCVqH+7QetX7hnB7NhLW0AdT9o+pqkMNk55kii8F8BrWyr5yAyQPj+oifWrbw7wrhrWlsLPVfN9CG+lPWr1q6FBI55ZGzWi2BoAPTp09KyasqKcQ8ahq9ooAGooooAKKKKACiiigAooooAKKKKACiiigArEisqKAKp4k8JIvAqtAIuf8Aqo+2h7/OqFbu3MMo21pLAnlIkGASGIeE7uOmr12cilHHeA2sSnmDLA5VDUfqO1SnjT6LQyNdlPsXk3kulSiCQ77QNW0YnQa99mmDzAsE5iC+ZJgl4j0jrqzVT8VhL2DukGO05FDYhtRp3H0qw4DiCciFIJcliHSSHD6AyoGJ9d65uNM6LtEtWG5nIBmWcBlO/fXch23rXcxGVP8AUWAAWKojUgMzGSG2Ifet+KxltLKuOBlcfdeHdnn4RHeq4Frxl0WrYCU7ABhH2iWcA9NulCjvQXrZpu4u7iCLVsKyGAkb65pYFi4d+3Srl4Z8KJsgLugKuatqlP6mmnAeCIw6GEqIk/Vh2puBXTDHW2c88l6R4lNZNRRVSIUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFBFFFAC7jPC0Yi2ULHVjuk9R+lczxdm7grxQdHdvsqGgVNdbpR4k4fbu2VZxKQVJI1BAeKnkgmiuObTo5551zFXBbtIypd2JDuxDnoGLN+NdE4DwRGHSGAzkAKI/LtST+HmGSbRutzuQ/QRpVxTS4oVsbLNvR6K9ooqxAKKKKACiiigAooooAKKKKACiiigAooooA/9k=">
+                                        <div class="card-body">
+                                            <p class = "Ptext">
+                                                I completed my high school education from D.A.V. Public School, Unit-8, Bhubaneswar securing <span style="font-weight: bolder;">95%</span> in my board exams
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class = "carousel-control-prev" href = "#QualSlide" role ="button" data-slide = "prev">
+                            <span class = "carousel-control-prev-icon"></span>
+                        </a>
+                        <a class = "carousel-control-next" href = "#QualSlide" role ="button" data-slide = "next">
+                            <span class = "carousel-control-next-icon"></span>
+                        </a>
+
+
+                    </div>
+                </div>   
+
+            <div class="col-xs-12">
+                <h1 class = "text-center" id = "Skills">Skills</h1>
+                <div class="carousel slide" id = "SkillSlide" data-ride="carousel">
+                    <ol class = "carousel-indicators">
+                        <li data-target = "#SkillSlide" data-slide-to = "0" class = "active"></li>
+                        <li data-target = "#SkillSlide" data-slide-to = "1"></li>
+                    </ol>
+                    
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class = "img-fluid" id="Logo" src = "https://s3.us-east-2.amazonaws.com/upload-icon/uploads/icons/png/20411958881579518946-256.png">
+                                    <div class="card-body">
+                                        <h1 class ="text-center" style="font-weight: bolder;">HTML5</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class = "img-fluid" id="Logo" src = "https://pluralsight.imgix.net/paths/path-icons/css-c9b214f0d7.png">
+                                    <div class="card-body">
+                                        <h1 class ="text-center" style="font-weight: bolder;">CSS3</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class = "img-fluid" id="Logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png">
+                                    <div class="card-body">
+                                        <h1 class ="text-center" style="font-weight: bolder;">C++</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class = "img-fluid" id="Logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png
+                                    ">
+                                    <div class="card-body">
+                                        <h1 class ="text-center" style="font-weight: bolder;">JavaScript</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class = "img-fluid" id="Logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png
+                                    ">
+                                    <div class="card-body">
+                                        <h1 class ="text-center" style="font-weight: bolder;">Python</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class = "img-fluid" id="Logo" src = "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png
+                                    ">
+                                    <div class="card-body">
+                                        <h1 class ="text-center" style="font-weight: bolder;">Java</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class = "carousel-control-prev" href = "#SkillSlide" role ="button" data-slide = "prev">
+                        <span class = "carousel-control-prev-icon"></span>
+                    </a>
+                    <a class = "carousel-control-next" href = "#SkillSlide" role ="button" data-slide = "next">
+                        <span class = "carousel-control-next-icon"></span>
+                    </a>
+
+
+                </div>
+            </div>   
+
+        <div class="col-xs-12">
+            <h1 class = "text-center" id = "Projects">Projects</h1>
+            <div class="carousel slide" id = "ProjectSlide" data-ride="carousel">
+                
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-block">
+                                <img class = "img-fluid" id="Logo" src = "https://www.thelogomix.com/files/imagecache/v3-logo-detail/coming-01.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-block">
+                                <img class = "img-fluid" id="Logo" src = "https://www.thelogomix.com/files/imagecache/v3-logo-detail/coming-01.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class = "carousel-control-prev" href = "#ProjectSlide" role ="button" data-slide = "prev">
+                    <span class = "carousel-control-prev-icon"></span>
+                </a>
+                <a class = "carousel-control-next" href = "#ProjectSlide" role ="button" data-slide = "next">
+                    <span class = "carousel-control-next-icon"></span>
+                </a>
+
+
+            </div>
+        </div>   
+    </div>
+
+    <div style= "height: 40px;"></div>
+
+    <footer class = "navbar-dark bg-dark">
+        <div class="container">
+            <div class="col-xs-12">
+                <a href = "https://www.facebook.com/marvelvsharma"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" class = "footimg"></a>
+                <a href = "https://www.google.com/"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/gmail-512.png" class = "footimg"></a>
+                <a href = "https://www.instagram.com/_v1shal1800_/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" class = "footimg"></a>
+                <a href = "https://www.linkedin.com/in/vishal-sharma-915a621a5/"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png" class = "footimg"></a>
+                <a href = "https://github.com/V1shal1800"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyNoFRe_pFDkSYv-_04Gf_8Kcp-GcXuLtU4XlV301EmZwCsv0l&usqp=CAU" class = "footimg"></a>
+            </div>
+            <div class="col-xs-12 text-center">
+                <span style="color:white;">Connect With Me</span>
+            </div>
+            <div class = "col-xs-12 text-center">
+                <span style="color:white;">&copy; Copyright 2020 Vishal Sharma</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
